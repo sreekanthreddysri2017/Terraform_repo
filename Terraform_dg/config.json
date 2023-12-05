@@ -1,0 +1,43 @@
+{
+  "storage_account": [
+    {
+      "account_name": "dgbdevsa001",
+      "account_tier": "Premium",
+      "location" :"East US",
+      "resource_group_name" : "CBX-DE-DEV-RG-001",
+      "account_replication_type" : "LRS"
+    }
+
+
+  ],
+  "key_vault": [
+    {
+      "vault_name": "dgbdevKv001",
+      "vault_location": "East US",
+      "resource_group_name": "CBX-DE-DEV-RG-001",
+      "sku_name" : "premium",
+      "tenant_id" : "d074e917-c8d9-42cc-8986-2cd1bdfbd079",
+      "enabled_for_disk_encryption": true,
+      "soft_delete_retention_days": 7
+    }
+    ],
+    "databricks_workspace" : [
+      {
+        "workspace_name"      : "workspace_q1_001",
+        "workspace_location"  :   "East US",
+        "resource_group_name" : "CBX-DE-DEV-RG-001",
+        "sku"                 : "premium"
+      }
+    ],"databricks_metastore" : [
+  {
+
+    "metastore_name" : "dg_metastore",
+    "storage_root": "wasbs://input@terra1sreekanth.blob.core.windows.net/",
+    "owner": "admin",
+    "region": "East US",
+    "force_destroy": true
+  }
+]
+}
+
+
